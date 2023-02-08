@@ -1,0 +1,11 @@
+# Dockerfile-frozenbubble
+# build with
+# podman build -t containerized-wayland-frozen-bubble -f Dockerfile-frozenbubble .
+
+FROM containerized-gui-wayland
+USER root
+RUN microdnf install -y --setopt install_weak_deps=0 lavalauncher frozen-bubble ; microdnf clean all
+
+ADD lavalauncher-frozen-bubble.config /etc/lavalauncher/lavalauncher.config
+USER app
+

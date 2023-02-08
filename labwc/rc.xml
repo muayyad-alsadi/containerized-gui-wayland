@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<labwc_config>
+<keyboard>
+   <default />
+   <keybind key="W-Return"><action name="Execute" command="foot" /></keybind>
+   <keybind key="A-Return"><action name="Execute" command="foot" /></keybind>
+   <keybind key="A-r"><action name="Execute" command="wofi --show drun" /></keybind>
+   <keybind key="C-Return"><action name="Execute" command="wofi --show drun" /></keybind>
+</keyboard>
+
+<!-- <theme><name>Mistral-Thin</name></theme> -->
+
+</labwc_config>
+

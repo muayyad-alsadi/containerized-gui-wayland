@@ -1,0 +1,9 @@
+# /etc/sway/config.d/autostart
+
+bindsym Mod1+Return exec foot
+bindsym Mod1+r exec wofi --show drun
+bindsym Mod1+F3 exec bemenu-run
+
+exec foot
+exec wayvnc 0.0.0.0
+

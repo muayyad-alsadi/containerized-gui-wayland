@@ -1,0 +1,13 @@
+# /usr/share/applications/weston-terminal.desktop
+[Desktop Entry]
+Type=Application
+Exec=weston-terminal
+Icon=foot
+Terminal=false
+Categories=System;TerminalEmulator;
+Keywords=shell;prompt;command;commandline;
+
+Name=Weston Terminal
+GenericName=Terminal
+Comment=A wayland native terminal emulator
+

@@ -1,0 +1,11 @@
+# labwv auto start
+# https://github.com/labwc/labwc/blob/master/docs/autostart
+
+swaybg -i /usr/share/backgrounds/default.png >/dev/null 2>&1 &
+
+# swaybar -b bar-0 >/dev/null 2>&1 &
+
+foot 2>&1 &
+
+wayvnc 0.0.0.0 2>&1 &
+

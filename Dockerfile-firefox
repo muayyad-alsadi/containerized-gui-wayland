@@ -1,0 +1,14 @@
+# Dockerfile-firefox
+# build with
+# podman build -t containerized-wayland-firefox -f Dockerfile-firefox .
+
+FROM containerized-gui-wayland
+USER root
+RUN microdnf install -y --setopt install_weak_deps=0 lavalauncher dnf ; \ 
+    dnf swap -y --setopt install_weak_deps=0 systemd-standalone-tmpfiles systemd ; \
+    dnf install --setopt install_weak_deps=0 -y firefox ; \ 
+    microdnf clean all; \
+    dnf clean all
+ADD lavalauncher-firefox.config /etc/lavalauncher/lavalauncher.config
+USER app
+
